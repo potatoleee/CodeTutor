@@ -8,11 +8,43 @@
 }
 
 .banner{
-  background-image: url(../images/bg_home.jpg);
+
+  background-image: url(../images/bg_home_mobile.jpg);
+  background-size: 100%;
+  padding-bottom:93.3333% ;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: calc( 100vh - 90px );
+  height: 0;
+  position: relative;
+  @include pad{
+    background-image: url(../images/bg_home.jpg);
+    background-size: cover;
+    height: calc( 100vh - 90px );
+    padding-bottom: 0;
+    
+
+  }
+  .banner__text{
+    width: 93%;
+    @include pad{
+      width: 650px;
+    }
+    &__content{
+      padding: 32px 28px;
+      h2{
+        font-size: 24px;
+        @include pad{
+          font-size: 48px;
+        }
+      }
+      p{
+        font-size: 14px;
+        @include pad{
+          font-size: 18px;
+        }
+      }
+    }
+  }
 
 }
 
@@ -62,4 +94,96 @@
     }
   }
   
+}
+.courseFlow{
+  h3{
+    font-size: 22px;
+    margin-bottom: 50px;
+    @include pad{
+      margin-bottom: 74px;
+      font-size: 28px;
+    }
+  }
+  &__content{
+    gap:50px 0;
+  }
+}
+.courseFlow__number{
+  position: absolute;
+  font-size: 48px;
+  color: $primary;
+  top: -36px;
+  left: 48px;
+  background-color: $darker;
+}
+
+.code__list{
+  gap: 0 8px;
+  overflow-x:auto ;
+  @include pad{
+    gap: 0 16px;
+  }
+  li{
+    a{
+      padding: 16px;
+      @include pad{
+        padding: 24px 32px;
+        border: 1px solid $white;
+        border-radius: $border-radius-sm;
+        color:$white;
+        font-weight: bold;
+        font-size: 16px;
+        @include pad{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.recommend__item{
+
+  img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  p{
+    &:nth-child(3){
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &:nth-child(4){
+      color: $primary;
+    }
+  }
+  &__first{
+    margin-bottom: 47px;
+  }
+}
+.btn-gradient{
+  margin: 0 auto;
+  display: inline-block;
+  background:linear-gradient(105deg ,$secondary,$primary);
+  border-radius: $border-radius-sm;
+  color:$white;
+}
+.course__item__wrap{
+ 
+  &:hover{
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border:1px solid $primary;
+    top: 0;
+    left: 0;
+    border-radius:$border-radius-lg;
+  }
+
+  }
+}
+.border-top{
+  border-top:1px solid #C1C1C1 !important;
 }

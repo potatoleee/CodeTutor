@@ -1,12 +1,15 @@
 main{
+    margin-top: 72px;
+    @include pad{
     margin-top: 90px;
+    }
 }
 .logo{
     a{
     display: block;
-    width: 174.42px;
-    height: 42px;
-    background-image: url("../images/logo.svg");
+    width: 23.88px;
+    height: 24px;
+    background-image: url("../images/logo2.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -14,11 +17,38 @@ main{
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap;
+    @include pad{
+        width: 174.42px;
+        height: 42px;
+        background-image: url("../images/logo.svg");
+    }
     }
 }
 nav{
+    .nav__content--mobile{
+    position: absolute;
+    max-height: 0px;
+    width: 100%;
+    top: 72px;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: $dark;
+    overflow: hidden;
+    li{
+        width: 100%;
+        a{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+   
+    &.open{
+        max-height: 174px;
+    }
+    }
     position: relative;
-    ::before{
+    &::before{
         content: "";
         position: absolute;
         background-color: $primary;
@@ -27,7 +57,7 @@ nav{
         bottom: 0;
         left: 0;
     }
-    ::after{
+    &::after{
         content: "";
         position: absolute;
         background-color: $secondary;
@@ -45,10 +75,10 @@ nav{
     width: 24px;
     height: 24px;
     position: relative;
-    display: none;
-    // @include phone{
-    //     display: block;
-    // }
+
+    @include pad{
+        display: none;
+    }
     &::before,&::after{
         position: absolute;
         content: "";

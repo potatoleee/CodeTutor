@@ -15,6 +15,7 @@
         @content
     }
 }
+
 @mixin pc{
     @media (min-width:992px) {
         @content
