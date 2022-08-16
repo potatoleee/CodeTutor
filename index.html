@@ -26,16 +26,29 @@
           <div class="logo ">
             <h1 class="mb-0 py-3"><a href="index.html">Coding Home</a></h1>
           </div>
-          <ul class=" nav__content d-flex list-unstyled  mb-0" >
-            <li><a class=" text-light fs-5" href="index.html">首頁</a></li>
-            <li><a class=" text-light mx-7 fs-5" href="course.html">課程介紹</a></li>
-            <li class="text-light d-flex align-items-center">
+          <!-- 導覽項目 -->
+          <ul class=" nav__content--mobile d-flex d-md-none list-unstyled  mb-0" >
+            <li><a class=" text-light mt-4" href="index.html">首頁</a></li>
+            <li><a class=" text-light mx-7 my-4" href="course.html">課程介紹</a></li>
+            <li class="text-light d-flex justify-content-center mb-4">
               <span class="material-symbols-outlined">
                 account_circle
                 </span>
-              <a class=" text-light ms-1 fs-5"href="login.html">登入</a>
+              <a class=" text-light ms-1 "href="login.html">登入</a>
             </li>
           </ul>
+          
+          <ul class=" nav__content--lg d-none d-md-flex list-unstyled  mb-0" >
+            <li><a class=" text-light " href="index.html">首頁</a></li>
+            <li><a class=" text-light mx-7 " href="course.html">課程介紹</a></li>
+            <li class="text-light d-flex align-items-center ">
+              <span class="material-symbols-outlined">
+                account_circle
+                </span>
+              <a class=" text-light ms-1 "href="login.html">登入</a>
+            </li>
+          </ul>
+
           <div class="btn__buger"></div>
         </div>
       </nav>
@@ -44,26 +57,28 @@
     
     <main>
     
-<section class="banner d-flex justify-content-center align-items-center">
-    <div class="banner__text py-7 px-11 border border-light border-1 position-relative bg-index-banner">
-        <div class="text__deco position-absolute top-0 start-0 translate-middle"></div>
-        <div class="text__deco position-absolute top-0 start-100 translate-middle"></div>
-        <div class="text__deco position-absolute top-100 start-100 translate-middle"></div>
-        <div class="text__deco position-absolute top-100 start-0  translate-middle"></div>
-        
-        <h2 class="text-liner-gradient display-5 mb-0">全台最豐富的程式家教</h2>
-        <h2 class="mb-4 display-5">在實踐中化理想為現實</h2>
-        <p class="text-center">全台最專業師資｜到府程式家教｜客製化課程</p>
+<section class="banner">
+    <div class="banner__text position-absolute top-50 start-50 translate-middle ">
+        <div class="banner__text__content  py-md-7 px-md-11 border border-light border-1 position-relative bg-index-banner">
+            <div class="text__deco position-absolute top-0 start-0 translate-middle"></div>
+            <div class="text__deco position-absolute top-0 start-100 translate-middle"></div>
+            <div class="text__deco position-absolute top-100 start-100 translate-middle"></div>
+            <div class="text__deco position-absolute top-100 start-0  translate-middle"></div>
+            
+            <h2 class=" text-center text-liner-gradient  mb-0">全台最豐富的程式家教</h2>
+            <h2 class=" text-center mb-4  ">在實踐中化理想為現實</h2>
+            <p class="text-center ">全台最專業師資｜到府程式家教｜客製化課程</p>
+        </div>
     </div>
 </section>
 
 <section class="bg-dark">
     <div class="container">
         <div class="row py-md-11 py-6 text-align-center">
-            <div class="col-md-3 d-flex align-items-md-center justify-content-center g-md-0 gy-0 ">
+            <div class="col-md-6 col-lg-3 d-flex align-items-md-center justify-content-center g-md-0 gy-0 ">
                 <h3 class="fs-3 lead">手把手帶你<br>親自到家教到會</h3>
             </div>
-            <div class="col-md-3 text-center  g-md-0 gy-4">
+            <div class="col-md-6 col-lg-3 text-center  g-md-0 gy-4">
                 <div class="px-4 py-7 hand__item">
                     <span class="material-symbols-outlined fz-50 mb-4 ">
                         code
@@ -72,7 +87,7 @@
                         <p>學習標準化的電腦形式語言 培養運算思維和邏輯素養</p>
                 </div>
             </div>
-            <div class="col-md-3 text-center g-md-0 gy-4  ">
+            <div class="col-md-6 col-lg-3 text-center g-md-0 gy-4  ">
                 <div class="px-4 py-7 hand__item">
                     <span class="material-symbols-outlined fz-50 mb-4">
                         rocket_launch
@@ -81,7 +96,7 @@
                     <p>客製化專屬課表<br>讓學習變簡單</p>
                 </div>
             </div>
-            <div class="col-md-3 text-center g-md-0 gy-4 ">
+            <div class="col-md-6 col-lg-3 text-center g-md-0 gy-4 ">
                 <div class="px-4 py-7 hand__item">
                     <span class="material-symbols-outlined fz-50 mb-4">
                         location_on
@@ -93,6 +108,176 @@
         </div>
     </div>
     
+</section>
+
+<section class="courseFlow bg-darker">
+    <div class="container py-6 py-md-11">
+        <h3 class="  text-center text-underLine-middle pb-3 fw-bold">預期上課流程</h3>
+        <div class="row courseFlow__content">
+            <div class="col-md-6 col-lg-3   ">
+                <div class="border rounded-2 p-7  position-relative">
+                    <p class="courseFlow__number fw-bold font-monospace ">01</p>
+                    <p class="fw-bold fs-4">預約</p>
+                    <p class="fs-5">線上預約指定課程與老師由老師安排專屬課程</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3   ">
+                <div class="border rounded-2 p-7 position-relative">
+                    <p class="courseFlow__number fw-bold  font-monospace">02</p>
+                    <p class="fw-bold fs-4">付款</p>
+                    <p class="fs-5">支援各種支付方式 提供12期分期付款</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3   ">
+                <div class="border rounded-2 p-7 position-relative">
+                    <p class="courseFlow__number fw-bold font-monospace ">03</p>
+                    <p class="fw-bold fs-4">上課</p>
+                    <p class="fs-5">地點由您指定 密集性一對一教學</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3  ">
+                <div class="border rounded-2 p-7 position-relative">
+                    <p class="courseFlow__number fw-bold font-monospace ">04</p>
+                    <p class="fw-bold fs-4">提供滿意度</p>
+                    <p class="fs-5">提供課程滿意度及回饋 讓我們持續成長與進步</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<div class="container-fluid bg-dark py-6 py-md-11">
+    <h3 class="text-center text-underLine-middle pb-3 mb-4 mb-md-9">你想要學習的程式，都在這裡</h3>
+    <ul class="code__list d-flex ps-0 ">
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JavaScript</a></li>
+       
+    </ul>
+</div>
+<section>
+
+</section>
+<section class="recommend bg-darkest py-6 py-md-11">
+    <div class="container">
+        <h3 class="text-center text-underLine-middle mb-9 fw-bold pb-3">熱門推薦課程</h3>
+        <div class="row gy-3 gy-lg-0 ">
+            <div class="col-md-6 col-lg-3">
+                <a href="course-detail.html">
+                    <div class="course__item__wrap">
+                        <div class="recommend__item bg-dark rounded-top pt-4 px-5 px-md-4  pb-3 pb-md-5">
+                                <img class="rounded-circle mb-2" src="./assets/images/teacher01.jpg" alt="belinda老師">
+                                <p class="text-center">Belinda</p>
+                                <p class="recommend__item__first">基礎前端 - HTML</p>
+                                <p>前端語言</p>
+                                <p class="mb-0">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+                                
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-bottom border-top pt-3 px-4">
+                                <p>50分鐘</p>
+                                <p class=" ms-2 font-monospace fs-2">NT$1600</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="course-detail.html">
+                    <div class="course__item__wrap">
+                        <div class="recommend__item bg-dark rounded-top pt-4 px-5 px-md-4 pb-3 pb-md-5 ">
+                                <img class="rounded-circle mb-2" src="./assets/images/teacher02.jpg" alt="belinda老師">
+                                <p class="text-center">Guava</p>
+                                <p>2022 Python 全攻略｜從入門到實務</p>
+                                <p>後端語言</p>
+                                <p class="mb-0">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-bottom border-top pt-3 px-4">
+                            <p>50分鐘</p>
+                            <p class=" ms-2 font-monospace fs-2">NT$2200</p>
+                        </div>
+                    </div>
+                 </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="course-detail.html">
+                    <div class="course__item__wrap">
+                        <div class="recommend__item bg-dark rounded-top pt-4 px-5 px-md-4 pb-3 pb-md-5 ">
+                            <img class="rounded-circle mb-2" src="./assets/images/teacher03.jpg" alt="belinda老師">
+                            <p class="text-center">Joe</p>
+                            <p>活用 Line Bot ｜APP 開發到上架完整實戰攻略</p>
+                            <p>行動應用開發</p>
+                            <p class="mb-0">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center bg-dark rounded-bottom border-top pt-3 px-4">
+                            <p>50分鐘</p>
+                            <p class=" ms-2 font-monospace fs-2">NT$1800</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="course-detail.html">
+                    <div class="course__item__wrap">
+                            <div class="recommend__item bg-dark rounded-top pt-4 px-5 px-md-4 pb-3 pb-md-5 ">
+                                <img class="rounded-circle mb-2" src="./assets/images/teacher04.jpg" alt="belinda老師">
+                                <p class="text-center">Belinda</p>
+                                <p>Linux 零基礎七天入門｜入門到實務</p>
+                                <p>作業系統與伺服器</p>
+                                <p class="mb-0">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center bg-dark rounded-bottom border-top pt-3 px-4">
+                                <p>50分鐘</p>
+                                <p class=" ms-2 font-monospace fs-2">NT$1100</p>
+                            </div>
+                 </div>
+                </a>
+            </div>
+        </div>
+        <div class="d-flex">
+        <a class="btn-gradient fs-5 py-2 px-5 mt-4 mt-md-5 " href="course.html">所有課程列表</a>
+        </div>
+    </div>
+    
+    
+</section>
+
+<section>
+    <div class="row g-0">
+        <div class="col-lg-3">
+            <div class="feature__item">
+                
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature__item">
+              
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature__item">
+              
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature__item">
+              
+            </div>
+        </div>
+    </div>
+            <!-- <ul class="d-flex">
+                <li> <img src="./assets/images/info01.jpg" alt=""></li>
+                <li> <img src="./assets/images/info02.jpg" alt=""></li>
+                <li> <img src="./assets/images/info03.jpg" alt=""></li>
+                <li> <img src="./assets/images/info04.jpg" alt=""></li>
+            </ul> -->
+        
+
 </section>
 
 
