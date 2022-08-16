@@ -1,0 +1,65 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.banner{
+  background-image: url(../images/bg_home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc( 100vh - 90px );
+
+}
+
+.text__deco{
+  width: 10px;
+  height: 10px;
+  background: $light;
+}
+.lead{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: $primary;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -16.5px;
+    @include pad{
+      left: 0;
+      transform: none;
+    }
+  }
+}
+
+.hand__item{
+  position: relative;
+  transition: all .5s;
+  &:hover{
+    background-color:$index-banner;
+    transition: all .5s;
+    span{
+        background: $gradient;
+        background-clip: text;
+        color: transparent;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $primary;
+      border-radius: 12px;
+    }
+  }
+  
+}

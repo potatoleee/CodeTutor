@@ -1,0 +1,81 @@
+main{
+    margin-top: 90px;
+}
+.logo{
+    a{
+    display: block;
+    width: 174.42px;
+    height: 42px;
+    background-image: url("../images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    }
+}
+nav{
+    position: relative;
+    ::before{
+        content: "";
+        position: absolute;
+        background-color: $primary;
+        width: 50%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+    }
+    ::after{
+        content: "";
+        position: absolute;
+        background-color: $secondary;
+        width: 50%;
+        height: 2px;
+        bottom: 0;
+        right:0 ;
+
+    }
+}
+
+
+
+.btn__buger{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: none;
+    // @include phone{
+    //     display: block;
+    // }
+    &::before,&::after{
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 2px;
+        background-color: $primary;
+        transition: all .5s;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &::before{
+        top: 9px;
+    }
+    &::after{
+        bottom: 9px;
+    }
+    &.open{
+        &::before{
+            top: 50%;
+            transform: translateX(-50%);
+            transform: rotate(-45deg);
+        }
+        &::after{
+            top: 50%;
+            transform: translateX(-50%);
+            transform: rotate(45deg);
+        }
+    }
+
+}
