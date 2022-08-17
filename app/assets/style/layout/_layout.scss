@@ -109,3 +109,16 @@ nav{
     }
 
 }
+
+.footer{
+    background-color: #1A1A1A;
+ 
+    p{   
+         color: #909090;
+        font-size: 12px;  
+        line-height: 1.1875;
+        @include pad{
+            font-size: 16px;
+        }
+    }
+}
