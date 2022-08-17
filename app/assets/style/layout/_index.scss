@@ -194,6 +194,7 @@
   background-position: center;
   padding-bottom: 73.055556%;
   position: relative;
+
   &:hover{
     &::before{
       background-color: #1A1A1A;
@@ -218,7 +219,8 @@
       height: 100%;
       width: 100%;
       background-color: $darker;
-      opacity: 0.9;
+      opacity: 0.9; 
+      transition: all .5s;
     }
     @include pc{
         background-size: cover;
@@ -283,4 +285,74 @@
       }
     
   } 
+}
+
+.article__item{
+  @include pad{
+  position: relative;
+  &:hover{
+      &::before{
+          position: absolute;
+          content: "";
+          border: 1px solid $primary;
+          border-radius: 12px;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+      .article__item__mask--vertical{
+          position: relative;
+         
+              &::before{
+                  position: absolute;
+                  content: "";
+                  width: calc( 100% - 64px );
+                  height: 32px;
+                  background-color:$darker;
+                  top: 0;
+                  left: 50%;
+                  transform: translateX(-50%);
+              }
+              &::after{
+                position: absolute;
+                content: "";
+                width: calc( 100% - 64px );
+                height: 32px;
+                background-color:$darker;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+          
+      }
+      .article__item__mask--horiz{
+        position: relative;
+        
+              &::before{
+                  position: absolute;
+                  content: "";
+                  height: calc( 100% - 64px );
+                  width: 32px;
+                  background-color:$darker;
+                  top: 50%;
+                  left: 0;
+                  transform: translateY(-50%);
+              }
+              &::after{
+                position: absolute;
+                content: "";
+                height: calc( 100% - 64px );
+                width: 32px;
+                background-color:$darker;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+              }
+          
+      }
+      
+  }
+}
 }
