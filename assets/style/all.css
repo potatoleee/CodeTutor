@@ -14111,6 +14111,65 @@ fieldset:disabled .btn {
           transform: translateX(-50%);
 }
 
+.swiper {
+  width: 100%;
+  height: 429px;
+}
+
+.swiper-img {
+  width: 61%;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  opacity: 1;
+  background: #62DB54;
+}
+
+.swiper-pagination-bullet-active {
+  background: #62DB54;
+  width: 16px;
+  height: 8px;
+  border-radius: 100px;
+}
+
+.share__card {
+  width: 48.5981%;
+  color: #494755;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  padding: 32px;
+  border-radius: 24px 24px 24px 0;
+}
+
+.share__card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  right: 32px;
+  top: -50px;
+}
+
+.swiper-button {
+  position: absolute;
+}
+
+.swiper-button .swiper-button-next, .swiper-button .swiper-button-prev {
+  position: unset;
+}
+
+.swiper-button .swiper-button-next::after, .swiper-button .swiper-button-prev::after {
+  content: "";
+}
+
 a {
   display: block;
   color: inherit;
@@ -14277,6 +14336,22 @@ nav::after {
           transform: rotate(45deg);
 }
 
+.footer {
+  background-color: #1A1A1A;
+}
+
+.footer p {
+  color: #909090;
+  font-size: 12px;
+  line-height: 1.1875;
+}
+
+@media (min-width: 768px) {
+  .footer p {
+    font-size: 16px;
+  }
+}
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;
 }
@@ -14421,8 +14496,9 @@ nav::after {
   font-size: 48px;
   color: #62DB54;
   top: -36px;
-  left: 48px;
+  left: 40px;
   background-color: #1C1C1C;
+  padding: 0 8px;
 }
 
 .code__list {
@@ -14699,6 +14775,24 @@ nav::after {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+  }
+}
+
+.share {
+  background-image: url(../images/bg_share.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 733px;
+  background-position: center;
+}
+
+.share h3, .share .h3 {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .share h3, .share .h3 {
+    font-size: 28px;
   }
 }
 

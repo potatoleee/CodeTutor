@@ -6,4 +6,14 @@ $(document).ready(function () {
     $('.nav__content--mobile').toggleClass('open');
   });
 });
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
 //# sourceMappingURL=all.js.map
