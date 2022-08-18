@@ -3,7 +3,9 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./helpers/mixin";
 @import './helpers/myUtlities';
+@import './components/button';
 
 @import 'base/base';
 @import 'layout/layout';
-@import 'layout/index';
+@import 'pages/index';
+@import 'pages/course';

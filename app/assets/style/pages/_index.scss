@@ -161,13 +161,7 @@
     margin-bottom: 47px;
   }
 }
-.btn-gradient{
-  margin: 0 auto;
-  display: inline-block;
-  background:linear-gradient(105deg ,$secondary,$primary);
-  border-radius: $border-radius-sm;
-  color:$white;
-}
+
 .course__item__wrap{
  
   &:hover{
@@ -464,6 +458,7 @@
       color:$primary;
       height: 24px;
       width: 24px;
+      // 原本的箭頭是用偽元素 content: 'next' 這個是swiper icon，所以用空白把他刪除
       &::after{
           content: "";
       }
@@ -478,6 +473,7 @@
   .swiper-pagination{
     position: initial;
     display: flex;
+    // 原本width為100%
     width: auto;
     
   }
@@ -485,6 +481,7 @@
   
 }
 
+// 更改頁籤點點default的樣式
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -495,7 +492,7 @@
   background: $primary;
   
 }
-
+// 更改頁籤點點active的樣式
 .swiper-pagination-bullet-active {
   
   background: $primary;

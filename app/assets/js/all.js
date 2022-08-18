@@ -11,6 +11,7 @@ $(document).ready(() => {
 })
 
 var swiper = new Swiper(".mySwiper", {
+  // 有fade效果才不會整張切換
   effect: 'fade',
   fadeEffect: {
     crossFade: true

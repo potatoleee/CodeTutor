@@ -1,0 +1,19 @@
+.course__card{
+    &__title{
+        font-size: 24px;
+        @include phone{
+            font-size: 20px;
+        }
+    }
+    &__text{
+        width: 574px;
+        @include d-pad{
+            width: 100%;
+        }
+    }
+}
+.course__list{
+    @include phone{
+        display: -webkit-box;
+    }
+}

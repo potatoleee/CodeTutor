@@ -1,0 +1,13 @@
+.btn{
+    border-radius: $btn-border-radius-sm;
+}
+.btn-outline-light:hover{
+    color:$primary;
+    background-color: transparent;
+    border-color: $primary;
+}
+
+.btn-gradient{
+    background:linear-gradient(105deg ,$secondary,$primary);
+    color:$white;
+}
