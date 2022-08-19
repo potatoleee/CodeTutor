@@ -93,6 +93,7 @@ $theme-colors: (
   "index-banner":#202020,
   "darker":       #1C1C1C,
   "darkest":    $black,
+  "light-gray": #C1C1C1,
 ) !default;
 // scss-docs-end theme-colors-map 
 
@@ -381,7 +382,7 @@ $border-widths: (
   5: 5px
 ) !default;
 
-$border-color:                $gray-300 !default;
+$border-color:                #C1C1C1;//$gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -461,6 +462,7 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.125 !default;
 $h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * 1.25  !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -471,7 +473,8 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
-  7: $font-size-sm,
+  7: $h7-font-size,
+  8: $font-size-sm,
 ) !default;
 // scss-docs-end font-sizes
 

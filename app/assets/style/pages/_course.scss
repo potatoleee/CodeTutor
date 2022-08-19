@@ -17,3 +17,28 @@
         display: -webkit-box;
     }
 }
+
+.course__price{
+    @include d-pad{
+        margin-top: 45px;
+    }
+    li{
+        cursor: pointer;
+        &:hover{
+            p{
+                color:$primary;
+            }
+        }
+    }
+}
+
+.course__seeMore{
+    h2{
+        font-size: 28px;
+        @include phone{
+            font-size: 22px;
+        }
+    }
+}
+
+
