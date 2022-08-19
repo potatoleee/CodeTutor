@@ -1,0 +1,18 @@
+.login__close{
+    position: absolute;
+    right: 24px;
+    top: 36px;
+    
+}
+
+@media(min-width:576px){
+    .modal-dialog{
+        max-width: calc( 100% - 24px );
+    }
+}
+@media(min-width:992px){
+    .modal-dialog{
+        max-width: 44.166667%;
+    }
+}
+
