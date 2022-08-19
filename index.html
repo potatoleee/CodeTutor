@@ -30,7 +30,7 @@
           <div class="logo ">
             <h1 class="mb-0 py-3"><a href="index.html">Coding Home</a></h1>
           </div>
-          <!-- 導覽項目 -->
+          <!-- 導覽列手機版 -->
           <ul class=" nav__content--mobile d-flex d-md-none list-unstyled  mb-0" >
             <li><a class=" text-light mt-4" href="index.html">首頁</a></li>
             <li><a class=" text-light mx-7 my-4" href="course.html">課程介紹</a></li>
@@ -41,7 +41,8 @@
               <a class=" text-light ms-1 "href="login.html">登入</a>
             </li>
           </ul>
-          
+           <!-- 導覽列手機版 -->
+           <!-- 導覽列電腦版 -->
           <ul class=" nav__content--lg d-none d-md-flex list-unstyled  mb-0" >
             <li><a class=" text-light " href="index.html">首頁</a></li>
             <li><a class=" text-light mx-7 " href="course.html">課程介紹</a></li>
@@ -49,15 +50,58 @@
               <span class="material-symbols-outlined">
                 account_circle
                 </span>
-              <a class=" text-light ms-1 "href="login.html">登入</a>
+              <a class=" text-light ms-1 " data-bs-toggle="modal"       href="#loginModal" >登入</a>
+              <!-- Button trigger modal -->
+                          
             </li>
           </ul>
+             <!-- 導覽列電腦版 -->
 
           <div class="btn__buger"></div>
         </div>
       </nav>
 
     </header>
+    <!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+     <!-- 主要內容改這裡 -->
+    <div class="modal-content bg-dark border rounded-0 pt-lg-4 pb-lg-7 py-6 px-4 ">
+      <div class="modal-header d-inline border-0 p-0 mb-lg-5 mb-4 ">
+        <p class="modal-title text-center fw-bold fs-4" id="exampleModalLabel">登入</p>
+      </div>
+      <span class="material-symbols-outlined login__close" data-bs-dismiss="modal" aria-label="Close">
+        close
+        </span>
+      <div class="modal-body p-0">
+        <form class="loginForm">
+          <div>
+              <div>
+                <label for="email">信箱</label>
+                <input class="d-block input-primary w-100 mt-2 mb-md-4 mb-3" type="email" id="email" name="userEmail" placeholder="請輸入信箱">
+            </div>
+            <div>
+                <label for="password">信箱</label>
+                <input class="d-block input-primary w-100 mt-2 mb-md-4 mb-3" type="password" id="password" name="userPassword" placeholder="請輸入密碼">
+            </div>
+          </div>
+          <a href="#" class=" btn btn-gradient-login py-2 w-100 border-0">登入</a>
+         <p class="loginForm__other text-center text-light-gray mt-4 mb-3 mt-lg-7">其他登入方式</p>
+          
+         <a class="btn btn-outline-light d-flex justify-content-center gap-5 py-2 mb-3 mb-lg-4"href="#">
+          <img class="w-24px"src="./assets/images/icon_fb.svg" alt="">
+          Facebook 登入
+          </a>
+          <a class="btn btn-outline-light d-flex justify-content-center gap-5 py-2"href="#">
+            <img class="w-24px"src="./assets/images/icon_google.svg" alt="">
+            Google 登入
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal -->
     
     <main>
     
@@ -442,7 +486,7 @@
 
     </main>
     <footer class="footer  ">
-      <p class="font-monospace  text-center m-0 py-4">Coding Home © 2022 All Rights Reserved</p>
+      <p class="font-monospace text-center m-0 py-4">Coding Home © 2022 All Rights Reserved</p>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>

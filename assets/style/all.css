@@ -14613,6 +14613,14 @@ fieldset:disabled .btn {
   list-style-position: inside;
 }
 
+.w-24px {
+  width: 24px;
+}
+
+.border-radius-4px {
+  border-radius: 4px;
+}
+
 .btn {
   border-radius: 0.5rem;
 }
@@ -14627,6 +14635,38 @@ fieldset:disabled .btn {
   background: -o-linear-gradient(345deg, #09ACF5, #62DB54);
   background: linear-gradient(105deg, #09ACF5, #62DB54);
   color: #fff;
+}
+
+.btn-gradient-login {
+  background: -o-linear-gradient(351deg, #09ACF5, #62DB54);
+  background: linear-gradient(99deg, #09ACF5, #62DB54);
+  color: #fff;
+}
+
+.input-primary {
+  border-radius: 4px;
+  color: #C1C1C1;
+  background-color: #1C1C1C;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+}
+
+.login__close {
+  position: absolute;
+  right: 24px;
+  top: 36px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: calc( 100% - 24px);
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 44.166667%;
+  }
 }
 
 a {
@@ -14809,6 +14849,47 @@ nav::after {
   .footer p {
     font-size: 16px;
   }
+}
+
+.loginForm {
+  width: 331px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .loginForm {
+    width: 100%;
+  }
+}
+
+.loginForm__other {
+  position: relative;
+}
+
+.loginForm__other::before, .loginForm__other::after {
+  position: absolute;
+  content: "";
+  width: 31.41994%;
+  height: 1px;
+  background-color: #C1C1C1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+  .loginForm__other::before, .loginForm__other::after {
+    width: 27.7777778%;
+  }
+}
+
+.loginForm__other::before {
+  left: 0;
+}
+
+.loginForm__other::after {
+  right: 0;
 }
 
 .material-symbols-outlined {
