@@ -2,6 +2,11 @@
 
 import Datepicker from 'path/to/node_modules/vanillajs-datepicker/js/Datepicker.js';
 
+const elem = document.querySelector('input[name="foo"]');
+const datepicker = new Datepicker(elem, {
+  // ...options
+}); 
+
 
 $(document).ready(() => {
 
@@ -29,7 +34,3 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-const elem = document.querySelector('input[name="foo"]');
-const datepicker = new Datepicker(elem, {
-  // ...options
-}); 
