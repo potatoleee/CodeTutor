@@ -2512,15 +2512,15 @@ progress {
 }
 
 .table-dark {
-  --bs-table-bg: #212529;
-  --bs-table-striped-bg: #2c3034;
+  --bs-table-bg: #2D2D2D;
+  --bs-table-striped-bg: #383838;
   --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #373b3e;
+  --bs-table-active-bg: #424242;
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #323539;
+  --bs-table-hover-bg: #3d3d3d;
   --bs-table-hover-color: #fff;
   color: #fff;
-  border-color: #373b3e;
+  border-color: #424242;
 }
 
 .table-responsive {
@@ -14747,7 +14747,7 @@ nav .nav__content--mobile {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #212529;
+  background-color: #2D2D2D;
   overflow: hidden;
 }
 
@@ -15538,6 +15538,202 @@ nav::after {
   .course__seeMore h2, .course__seeMore .h2 {
     font-size: 22px;
   }
+}
+
+.payProgress {
+  background-color: #2D2D2D;
+}
+
+@media (max-width: 991px) {
+  .payProgress {
+    background: #000;
+  }
+}
+
+.timeLine {
+  position: relative;
+}
+
+.timeLine::before {
+  position: absolute;
+  content: "";
+  background-color: #C1C1C1;
+  width: 100%;
+  left: 0;
+  top: 9px;
+  height: 2px;
+}
+
+.timeLine::after {
+  position: absolute;
+  content: "";
+  background-color: #62DB54;
+  width: 50%;
+  left: 0;
+  top: 9px;
+  height: 2px;
+  z-index: 2;
+}
+
+.step {
+  position: relative;
+}
+
+.step::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #C1C1C1;
+  top: -24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #2D2D2D;
+  z-index: 3;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Azeret Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.step.step__1::before {
+  content: "1";
+}
+
+.step.step__2::before {
+  content: "2";
+}
+
+.step.step__3::before {
+  content: "3";
+}
+
+.step.active {
+  color: #62DB54;
+}
+
+.step.active::before {
+  background-color: #62DB54;
+  border-color: #62DB54;
+  color: #fff;
+}
+
+.singUp {
+  padding-top: 48px;
+  padding-bottom: 114px;
+}
+
+@media (max-width: 991px) {
+  .singUp {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.singUp__teacher {
+  left: 48px;
+  position: absolute;
+}
+
+@media (max-width: 991px) {
+  .singUp__teacher {
+    left: 0;
+    position: initial;
+    margin-bottom: 44px;
+  }
+}
+
+.singUp__teacher .triangle {
+  position: relative;
+}
+
+.singUp__teacher .triangle::before {
+  position: absolute;
+  content: "";
+  right: -12px;
+  top: calc( 50% - 12px);
+  height: 0;
+  width: 0;
+  border-left: 12px solid #2D2D2D;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+@media (max-width: 991px) {
+  .singUp__teacher .triangle::before {
+    bottom: -12px;
+    left: calc( 50% - 12px);
+    top: 100%;
+    border-top: 12px solid #2D2D2D;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+  }
+}
+
+.singUp__teacher__content p:nth-child(2) {
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .singUp__teacher__content p:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+.singUp__form {
+  padding-right: 32px;
+  padding-bottom: 48px;
+  padding-left: 114px;
+}
+
+@media (max-width: 991px) {
+  .singUp__form {
+    padding: 24px;
+    padding-top: 0;
+  }
+}
+
+.singUp__form label {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 767px) {
+  .singUp__form label {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .singUp__form__pay button {
+    width: 48%;
+  }
+}
+
+.singUp__form__input {
+  width: 46.619718%;
+}
+
+@media (max-width: 767px) {
+  .singUp__form__input {
+    width: 100%;
+  }
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../images/selectArrow-white.svg") no-repeat scroll 97% 50% transparent;
 }
 
 /*# sourceMappingURL=all.css.map */
