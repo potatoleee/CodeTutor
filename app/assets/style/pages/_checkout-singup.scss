@@ -1,0 +1,165 @@
+.payProgress{
+    background-color: $dark;
+    @include d-pad{
+        background: $darkest;
+    }
+
+}
+.timeLine{
+    position: relative;
+    // 第一條灰底線
+    &::before{
+        position: absolute;
+        content: "";
+        background-color: $light-gray;
+        width: 100%;
+        left: 0;
+        top: 9px;
+        height: 2px;
+    }
+    // 進度綠線
+    &::after{
+        position: absolute;
+        content: "";
+        background-color: $primary;
+        width: 50%;
+        left: 0;
+        top: 9px;
+        height: 2px;
+        z-index: 2;
+    }
+}
+.step{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border:1px solid $light-gray;
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $dark;
+        z-index: 3;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-family-monospace;
+    }
+    &.step__1::before{
+        content: "1";
+    }
+    &.step__2::before{
+        content: "2";
+    }
+    &.step__3::before{
+        content: "3";
+    }
+    &.active{
+        color: $primary;
+        &::before{
+        background-color: $primary;
+        border-color: $primary;
+        color:$white;
+        }
+    }
+
+}
+.singUp{
+    padding-top: 48px;
+    padding-bottom: 114px;
+    @include d-pad{
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+}
+.singUp__teacher{
+    left: 48px;
+    position: absolute;
+
+  
+
+    @include d-pad{
+        left: 0;
+        position: initial;
+        margin-bottom: 44px;
+    }
+    .triangle{
+     position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            right: -12px;
+            top: calc( 50% - 12px );
+            height: 0;
+            width: 0;
+            border-left:12px solid $dark;
+            border-top:12px solid transparent;
+            border-bottom:12px solid transparent;
+            @include d-pad{
+                bottom: -12px;
+                left: calc( 50% - 12px );
+                top: 100%;
+                border-top:12px solid $dark;
+                border-left:12px solid transparent;
+                border-right:12px solid transparent;
+                
+            }
+
+        }   
+    }
+}
+.singUp__teacher__content{
+    p{
+        &:nth-child(2){
+            font-size: 18px;
+            @include phone{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.singUp__form{
+   padding-right: 32px;
+    padding-bottom: 48px;
+    padding-left: 114px;
+    @include d-pad{
+        padding: 24px ;
+        padding-top: 0;
+    }
+    label{
+        margin-bottom: 6px;
+        @include phone{
+            margin-bottom: 8px;
+        }
+    }
+    &__pay{
+        button{
+            @include d-pad{
+            width: 48%;
+            }
+        }
+    }
+}
+.singUp__form__input{
+    width: 46.619718%;
+    @include phone{
+        width: 100%;
+    }
+}
+
+// 
+select{
+    //把預設箭頭先隱藏
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    // 下載新的箭頭載入
+    background: url('../images/selectArrow-white.svg') no-repeat scroll 97% 50% transparent;
+   
+    
+
+}
