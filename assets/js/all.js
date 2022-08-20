@@ -1,12 +1,10 @@
 "use strict";
 
-var _Datepicker = _interopRequireDefault(require("path/to/node_modules/vanillajs-datepicker/js/Datepicker.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var elem = document.querySelector('input[name="foo"]');
-var datepicker = new _Datepicker["default"](elem, {// ...options
-});
+// import Datepicker from 'path/to/node_modules/vanillajs-datepicker/js/Datepicker.js';
+// const elem = document.querySelector('input[name="foo"]');
+// const datepicker = new Datepicker(elem, {
+//   // ...options
+// }); 
 $(document).ready(function () {
   $('.btn__buger').on('click', function (e) {
     $('.btn__buger').toggleClass('open');
