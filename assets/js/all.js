@@ -4,6 +4,9 @@ var _Datepicker = _interopRequireDefault(require("path/to/node_modules/vanillajs
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+var elem = document.querySelector('input[name="foo"]');
+var datepicker = new _Datepicker["default"](elem, {// ...options
+});
 $(document).ready(function () {
   $('.btn__buger').on('click', function (e) {
     $('.btn__buger').toggleClass('open');
@@ -24,8 +27,5 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
-});
-var elem = document.querySelector('input[name="foo"]');
-var datepicker = new _Datepicker["default"](elem, {// ...options
 });
 //# sourceMappingURL=all.js.map
