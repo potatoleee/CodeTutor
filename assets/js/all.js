@@ -1,10 +1,9 @@
 "use strict";
 
 // import Datepicker from 'path/to/node_modules/vanillajs-datepicker/js/Datepicker.js';
-// const elem = document.querySelector('input[name="foo"]');
-// const datepicker = new Datepicker(elem, {
-//   // ...options
-// }); 
+var elem = document.querySelector('input[name="foo"]');
+var datepicker = new Datepicker(elem, {// ...options
+});
 $(document).ready(function () {
   $('.btn__buger').on('click', function (e) {
     $('.btn__buger').toggleClass('open');

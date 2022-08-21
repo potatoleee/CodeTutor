@@ -14625,6 +14625,10 @@ fieldset:disabled .btn {
   cursor: pointer;
 }
 
+.datepicker-picker {
+  color: black;
+}
+
 .btn {
   border-radius: 0.5rem;
 }
