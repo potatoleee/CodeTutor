@@ -25,6 +25,13 @@ main{
     }
 }
 nav{
+    li{
+        transition: all .5s;
+        &:hover{
+            color: $primary;
+        }
+    }
+    
     .nav__content--mobile{
     position: absolute;
     max-height: 0px;
@@ -42,6 +49,7 @@ nav{
             text-align: center;
         }
     }
+    
    
     &.open{
         max-height: 174px;

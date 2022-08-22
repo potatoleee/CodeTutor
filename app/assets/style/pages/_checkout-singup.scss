@@ -22,11 +22,23 @@
         position: absolute;
         content: "";
         background-color: $primary;
-        width: 50%;
+        width: 0%;
         left: 0;
         top: 9px;
         height: 2px;
         z-index: 2;
+    }
+    &.timeLine__50{
+        &::after{
+            content: "";
+            width: 50%;
+        }
+    }
+    &.timeLine__100{
+        &::after{
+            content: "";
+            width: 100%;
+        }
     }
 }
 .step{
@@ -44,6 +56,7 @@
         background-color: $dark;
         z-index: 3;
         font-size: 12px;
+        line-height: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -66,8 +79,13 @@
         color:$white;
         }
     }
-
+    &.check::before{
+        content: "\2713";
+        font-size: 18px;
+    }
+  
 }
+
 .singUp{
     padding-top: 48px;
     padding-bottom: 114px;
