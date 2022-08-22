@@ -1,9 +1,5 @@
 "use strict";
 
-// import Datepicker from 'path/to/node_modules/vanillajs-datepicker/js/Datepicker.js';
-var elem = document.querySelector('input[name="foo"]');
-var datepicker = new Datepicker(elem, {// ...options
-});
 $(document).ready(function () {
   $('.btn__buger').on('click', function (e) {
     $('.btn__buger').toggleClass('open');
@@ -24,5 +20,8 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
+});
+var elem = document.querySelector('input[name="foo"]');
+var datepicker = new Datepicker(elem, {// ...options
 });
 //# sourceMappingURL=all.js.map

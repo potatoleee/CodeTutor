@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -14579,6 +14580,10 @@ fieldset:disabled .btn {
   font-size: 50px;
 }
 
+.fz-48 {
+  font-size: 48px;
+}
+
 .text-underLine-middle {
   position: relative;
 }
@@ -14677,6 +14682,31 @@ fieldset:disabled .btn {
   }
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*使物件依序排列*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*使物件垂直排列*/
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /*可佔滿垂直剩餘的空間*/
+  background-color: #000;
+}
+
 a {
   display: block;
   color: inherit;
@@ -14736,6 +14766,16 @@ main {
 
 nav {
   position: relative;
+}
+
+nav li {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+nav li:hover {
+  color: #62DB54;
 }
 
 nav .nav__content--mobile {
@@ -15567,11 +15607,21 @@ nav::after {
   position: absolute;
   content: "";
   background-color: #62DB54;
-  width: 50%;
+  width: 0%;
   left: 0;
   top: 9px;
   height: 2px;
   z-index: 2;
+}
+
+.timeLine.timeLine__50::after {
+  content: "";
+  width: 50%;
+}
+
+.timeLine.timeLine__100::after {
+  content: "";
+  width: 100%;
 }
 
 .step {
@@ -15593,6 +15643,7 @@ nav::after {
   background-color: #2D2D2D;
   z-index: 3;
   font-size: 12px;
+  line-height: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15625,6 +15676,11 @@ nav::after {
   background-color: #62DB54;
   border-color: #62DB54;
   color: #fff;
+}
+
+.step.check::before {
+  content: "\2713";
+  font-size: 18px;
 }
 
 .singUp {
@@ -15733,6 +15789,14 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   background: url("../images/selectArrow-white.svg") no-repeat scroll 97% 50% transparent;
+}
+
+.payment__form label {
+  margin-bottom: 6px;
+}
+
+.icon-fill-0 {
+  font-variation-settings: "FILL" 0;
 }
 
 /*# sourceMappingURL=all.css.map */
