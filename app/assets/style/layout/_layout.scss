@@ -104,12 +104,10 @@ nav{
     &.open{
         &::before{
             top: 50%;
-            transform: translateX(-50%);
             transform: rotate(-45deg);
         }
         &::after{
             top: 50%;
-            transform: translateX(-50%);
             transform: rotate(45deg);
         }
     }
