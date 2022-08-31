@@ -22,6 +22,10 @@
     <!-- datepicker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
     <!-- datepicker -->
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos -->
+
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -88,14 +92,14 @@
                 <input class="d-block input-primary w-100 mt-2 mb-md-4 mb-3" type="password" id="password" name="userPassword" placeholder="請輸入密碼">
             </div>
           </div>
-          <a href="#" class=" btn btn-gradient-login py-2 w-100 border-0">登入</a>
+          <a href="checkout-singUp.html" class=" btn btn-gradient-login py-2 w-100 border-0">登入</a>
          <p class="loginForm__other text-center text-light-gray mt-4 mb-3 mt-lg-7">其他登入方式</p>
           
          <a class="btn btn-outline-light d-flex justify-content-center gap-5 py-2 mb-3 mb-lg-4"href="#">
           <img class="w-24px"src="./assets/images/icon_fb.svg" alt="">
           Facebook 登入
           </a>
-          <a class="btn btn-outline-light d-flex justify-content-center gap-5 py-2"href="#">
+          <a class="btn btn-outline-light d-flex justify-content-center gap-5 py-2" href="#">
             <img class="w-24px"src="./assets/images/icon_google.svg" alt="">
             Google 登入
           </a>
@@ -108,8 +112,8 @@
     
     <main>
     
-<section class="banner">
-    <div class="banner__text position-absolute top-50 start-50 translate-middle ">
+<section class="banner" data-aos="fade">
+    <div class="banner__text position-absolute top-50 start-50 translate-middle " >
         <div class="banner__text__content  py-md-7 px-md-11 border border-light border-1 position-relative bg-index-banner">
             <div class="text__deco position-absolute top-0 start-0 translate-middle"></div>
             <div class="text__deco position-absolute top-0 start-100 translate-middle"></div>
@@ -375,7 +379,7 @@
                             <img class="mb-3"src="./assets/images/article02.jpg" alt="軟體工程師有哪些類別 軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務">
                             <p class="fs-5 fw-bold">軟體工程師有哪些類別</p>
                             <p>軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
-                            <p class="text-end mb-0"><a class="d-inline text-primary font-monospace fs-5 "href="#">MORE</a></p>
+                            <p class="text-end mb-0"><a class="d-inline text-primary font-monospace fs-5 stretched-link"href="#">MORE</a></p>
                         </div>
                         </div>
                         </div>
@@ -389,7 +393,7 @@
                             <img class="mb-3"src="./assets/images/article03.jpg" alt="2022 前端開發者學習地圖，轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考">
                             <p class="fs-5 fw-bold">免費 25 小時前端教學資源</p>
                             <p>這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
-                            <p class="text-end mb-0"><a class="d-inline text-primary font-monospace fs-5 "href="#">MORE</a></p>
+                            <p class="text-end mb-0"><a class="d-inline text-primary font-monospace fs-5 stretched-link"href="#">MORE</a></p>
                         </div>
                         </div>
                         </div>
@@ -406,7 +410,7 @@
     </h3>
    <div class="row justify-content-center">
     <div class="col-lg-8">
-        <div class="swiper mySwiper">
+        <div class="swiper commentSwiper">
             <div class="swiper-wrapper">
                 <!-- slide 1 -->
               <div class="swiper-slide">
@@ -491,10 +495,14 @@
     <footer class="footer  ">
       <p class="font-monospace text-center m-0 py-4">Coding Home © 2022 All Rights Reserved</p>
     </footer>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- datepicker -->
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
     <script type="module" src="./assets/js/all.js"></script>
   </body>
