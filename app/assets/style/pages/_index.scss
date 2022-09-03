@@ -74,6 +74,17 @@
 .hand__item{
   position: relative;
   transition: all .5s;
+  @include phone{
+    background-color:$index-banner;
+
+  }
+  span{
+    @include phone{
+      background: $gradient;
+      background-clip: text;
+      color: transparent;
+    }
+  }
   &:hover{
     background-color:$index-banner;
     transition: all .5s;
@@ -93,6 +104,7 @@
       border-radius: 12px;
     }
   }
+  
   
 }
 .courseFlow{
@@ -281,8 +293,9 @@
 }
 // article hover 四個角角
 .article__item{
+ position: relative;
   @include pad{
-  position: relative;
+    position: relative;
   &:hover{
       &::before{
           position: absolute;
